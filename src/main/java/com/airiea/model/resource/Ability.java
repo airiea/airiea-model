@@ -34,9 +34,6 @@ public class Ability {
     @JsonProperty("response_requirement")
     String responseRequirement;
 
-    @JsonProperty("knowledge_base_agent_name")
-    String knowledgeBaseAgentName;
-
     @JsonProperty("example_input")
     String exampleInput;
 

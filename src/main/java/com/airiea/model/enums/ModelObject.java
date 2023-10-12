@@ -1,5 +1,6 @@
 package com.airiea.model.enums;
 
+import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
@@ -13,6 +14,11 @@ public enum ModelObject {
     KNOWLEDGE_CONTENT_COMPLETE_UPDATE("knowledge.content.incremental.update"),
     KNOWLEDGE_VECTORS_COMPLETE_UPDATE("knowledge.vectors.incremental.update");
     private final String name;
+
+    @JsonValue
+    public String getName() {
+        return name;
+    }
 
     public static ModelObject fromString(String name) {
         for (ModelObject modelObject : ModelObject.values()) {

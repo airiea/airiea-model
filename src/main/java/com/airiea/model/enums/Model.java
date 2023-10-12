@@ -1,5 +1,6 @@
 package com.airiea.model.enums;
 
+import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
@@ -18,6 +19,11 @@ public enum Model {
     KNOWLEDGE_BASE_UPDATE("knowledge-base-write"),
     ;
     private final String name;
+
+    @JsonValue
+    public String getName() {
+        return name;
+    }
 
     public static Model fromString(String name) {
         for (Model model : Model.values()) {

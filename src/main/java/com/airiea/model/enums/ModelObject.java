@@ -10,6 +10,8 @@ public enum ModelObject {
     OPEN_AI_EMBEDDING("embedding"),
     OPEN_AI_CHAT_COMPLETION("chat.completion"),
     OPEN_AI_COMPLETION("completion"),
+
+    ANSWER_QUESTION("answer.question"),
     KNOWLEDGE_CONTENT_INCREMENTAL_UPDATE("knowledge.content.incremental.update"),
     KNOWLEDGE_CONTENT_COMPLETE_UPDATE("knowledge.content.incremental.update"),
     KNOWLEDGE_VECTORS_COMPLETE_UPDATE("knowledge.vectors.incremental.update");

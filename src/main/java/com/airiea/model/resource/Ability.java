@@ -34,14 +34,17 @@ public class Ability {
     @JsonProperty("response_requirement")
     String responseRequirement;
 
+    @JsonProperty("response_delimiter")
+    String responseDelimiter;
+
     @JsonProperty("example_input")
     String exampleInput;
 
     @JsonProperty("example_output")
     String exampleOutput;
 
-    @JsonProperty("input_format")
-    String inputFormat;
+    @JsonProperty("prompt_format")
+    String promptFormat;
 
     @JsonProperty("update_type")
     UpdateType updateType;

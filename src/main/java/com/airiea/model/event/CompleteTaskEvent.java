@@ -1,5 +1,6 @@
 package com.airiea.model.event;
 
+import com.airiea.model.enums.TaskInputSource;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -17,6 +18,6 @@ public class CompleteTaskEvent {
     @JsonProperty("task_id")
     String taskId;
 
-    @JsonProperty("task_output")
-    String taskOutput;
+    @JsonProperty("task_input_source")
+    TaskInputSource taskInputSource;
 }

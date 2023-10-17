@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
+import java.util.List;
 
 @Data
 @Builder
@@ -27,11 +28,17 @@ public class Task {
     @JsonProperty("task_count")
     Integer taskCount;
 
-    @JsonProperty("task_input")
-    String taskInput;
+    @JsonProperty("text_output")
+    String textInput;
 
-    @JsonProperty("task_output")
-    String taskOutput;
+    @JsonProperty("text_output")
+    String textOutput;
+
+    @JsonProperty("embedding_input")
+    List<Double> embeddingInput;
+
+    @JsonProperty("embedding_output")
+    List<Double> embeddingOutput;
 
     Status status;
 

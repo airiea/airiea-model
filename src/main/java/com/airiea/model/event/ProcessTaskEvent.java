@@ -11,15 +11,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ProcessTaskEvent {
-    @JsonProperty("agent_name")
-    String agentName;
-
     @JsonProperty("knowledge_id")
     String knowledgeId;
 
     @JsonProperty("task_id")
     String taskId;
-
-    @JsonProperty("task_input")
-    String taskInput;
 }

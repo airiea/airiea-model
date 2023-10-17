@@ -22,7 +22,7 @@ public class Knowledge {
 
     String content;
 
-    List<Double> vectors;
+    List<Double> embedding;
 
     @JsonProperty("created_date")
     Date createdDate;

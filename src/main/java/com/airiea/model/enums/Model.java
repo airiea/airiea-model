@@ -1,5 +1,6 @@
 package com.airiea.model.enums;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,8 +17,7 @@ public enum Model {
     OPEN_AI_GPT_4_0613("gpt-4-0613"),
     OPEN_AI_GPT_4_32K_0613("gpt-4-32k-0613"),
     OPEN_AI_TEXT_EMBEDDING_ADA_002("text-embedding-ada-002"),
-    KNOWLEDGE_BASE_UPDATE("knowledge-base-write"),
-    ;
+    KNOWLEDGE_BASE_UPDATE("knowledge-base-write");
     private final String name;
 
     @JsonValue
@@ -25,6 +25,7 @@ public enum Model {
         return name;
     }
 
+    @JsonCreator
     public static Model fromString(String name) {
         for (Model model : Model.values()) {
             if (model.getName().equals(name)) {

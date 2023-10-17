@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class TaskInputEvent {
+public class InputTaskEvent {
     @JsonProperty("entity_id")
     String entityId;
 

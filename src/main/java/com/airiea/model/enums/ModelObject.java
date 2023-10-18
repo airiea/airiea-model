@@ -1,5 +1,6 @@
 package com.airiea.model.enums;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -21,6 +22,7 @@ public enum ModelObject {
         return name;
     }
 
+    @JsonCreator
     public static ModelObject fromString(String name) {
         for (ModelObject modelObject : ModelObject.values()) {
             if (modelObject.getName().equals(name)) {

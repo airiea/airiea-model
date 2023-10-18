@@ -28,7 +28,7 @@ public class Task {
     @JsonProperty("task_count")
     Integer taskCount;
 
-    @JsonProperty("text_output")
+    @JsonProperty("text_input")
     String textInput;
 
     @JsonProperty("text_output")

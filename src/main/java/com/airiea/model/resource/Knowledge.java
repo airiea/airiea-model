@@ -14,15 +14,16 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Knowledge {
+    @JsonProperty("knowledge_id")
+    String knowledgeId;
+
     @JsonProperty("entity_id")
     String entityId;
 
-    @JsonProperty("agent_id")
-    String agentId;
+    @JsonProperty("agent_name")
+    String agentName;
 
     String content;
-
-    List<Double> embedding;
 
     @JsonProperty("created_date")
     Date createdDate;
